@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SerialTabby</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>SerialTabby</h1>
+  <input type="text" id="searchInput" placeholder="Search tabs...">
+  <div id="tabGroups"></div>
+  
+  <div id="reminderModal" class="modal">
+    <div class="modal-content">
+      <h2>Set Reminder</h2>
+      <div class="reminder-section">
+        <h3>Relative Time</h3>
+        <input type="number" id="relativeTime" min="1">
+        <select id="relativeUnit">
+          <option value="seconds">Seconds</option>
+          <option value="minutes" selected>Minutes</option>
+          <option value="hours">Hours</option>
+        </select>
+      </div>
+      <div class="reminder-section">
+        <h3>Absolute Time</h3>
+        <input type="time" id="absoluteTime">
+      </div>
+      <button id="setReminderBtn">Set Reminder</button>
+      <button id="cancelReminderBtn">Cancel</button>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
